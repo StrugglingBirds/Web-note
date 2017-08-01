@@ -1,2 +1,3 @@
 # Web-note
-本人在web前端这方面的一些学习笔记及一些前端资源
+本人在web前端这方面的一些学习笔记及分享一些前端资源
+[git方面的理解及知识分享](http://www.cnblogs.com/horanly/p/6265182.html)

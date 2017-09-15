@@ -10,8 +10,9 @@
       - 对文字的缩放规则不一致。zoom缩放依然受限于最小12像素中文大小限制；而scale就是纯粹的对图形进行比例控制，文字50%原来尺寸。 <br>
 >  5.safari浏览器hack css样式写法：[;width:100px;]（safari Hack 写法只针对safari浏览器的css样式）<br>
 >  6.原生javascript 获取元素的CSS样式的原生API使用方法： [点击查看张鑫旭博客](http://www.zhangxinxu.com/wordpress/2012/05/getcomputedstyle-js-getpropertyvalue-currentstyle/) <br>
-     方法名：getComputedStyle <br>
-            currentStyle <br>
-            getPropertyValue <br>
-            getAttribute <br>
-            getPropertyCSSValue <br>
+     方法名：<br>
+     getComputedStyle <br>
+     currentStyle <br>
+     getPropertyValue <br>
+     getAttribute <br>
+     getPropertyCSSValue <br>

@@ -16,5 +16,3 @@
      getPropertyValue <br>
      getAttribute <br>
      getPropertyCSSValue <br>
-     
-# h1

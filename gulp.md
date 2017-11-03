@@ -1,1 +1,1 @@
-[gulp详细入门教程](http://www.ydcss.com/archives/18#lesson1)
+**1、[gulp详细入门教程](http://www.ydcss.com/archives/18#lesson1)**

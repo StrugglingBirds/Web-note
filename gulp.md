@@ -15,6 +15,10 @@
 - 7、gulp-imagemin 压缩图片
 - 8、gulp-htmlmin 压缩HTML代码
 - 9、gulp-rename 文件重命名
+- 10、gulp-less less编译
+- 11、gulp-sass sass编译
+- 12、gulp-livereload 自动刷新（当代码变化时，它可以帮我们自动刷新页面）
+- 13、gulp-load-plugins 自动加载插件
 ## gulp资源分享
 - 1、[gulp详细入门教程](http://www.ydcss.com/archives/18#lesson1)**
 - 2、[gulpfile.js语法教程及依赖安装教程](http://www.cnblogs.com/2050/p/4198792.html)

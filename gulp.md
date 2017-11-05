@@ -17,3 +17,4 @@
 - 9、gulp-rename 文件重命名
 ## gulp资源分享
 - 1、[gulp详细入门教程](http://www.ydcss.com/archives/18#lesson1)**
+- 2、[gulpfile.js语法教程及依赖安装教程](http://www.cnblogs.com/2050/p/4198792.html)

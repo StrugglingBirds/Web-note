@@ -1,5 +1,5 @@
 ##  onabort
-> onabort 事件会在图像加载被中断时发生。
+> onabort 事件会在图像加载被中断时发生。<
 ` <img src="image_w3default.gif" onabort="alert('Error: Loading of the image was aborted')" />`
 ##  onauxclick
 onbeforecopy

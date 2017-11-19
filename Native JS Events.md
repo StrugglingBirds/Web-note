@@ -51,8 +51,6 @@
 > ondurationchange 事件在视频/音频（audio/video）的时长发生变化时触发
 ##  onemptied
 > 
-- 塑料袋放进了是
-- 手里发动军事
 onended
 onerror
 onfocus

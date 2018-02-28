@@ -3,7 +3,7 @@
 - 表现：异步组件在页面加载时，只有在需要加载此组件时才会按需加载组件
 - 优点：优化初次加载页面时的性能
 - 缺点：Browserify在默认情况下不支持
-- 在非webpack打包脚手架环境下的使用方法
+(1) 在非webpack打包脚手架环境下的使用方法
 ``` 
 <html>
 <head>
@@ -65,4 +65,46 @@
 
 </body>
 </html>
+```
+(2) 在webpack的环境下
+```
+//test.vue的部分
+<script>
+    import Vue from 'vue'
+
+    //关键是以下这部分代码
+    //需要将引入的异步组件，赋值给变量searchSearch
+    //然后在下方components对象里，将变量正常添加进去，就可以使用异步组件了
+    //第一个参数是组件名，第二个是异步引入的方法
+    const searchSearch = Vue.component('searchSearch', function (resolve) {
+        require(['./service-search.vue'], resolve)
+    })
+
+    export default{
+        data(){
+            return {}
+        },
+        methods: {},
+        components: {
+            searchSearch: searchSearch
+        }
+    }
+</script>
+```
+更简单的方法
+```
+<script>
+    export default{
+        data(){
+            return {}
+        },
+        methods: {},
+        components: {
+            searchSearch: function (resolve) {
+                //异步组件写法
+                require(['./service-search.vue'], resolve)
+            }
+        }
+    }
+</script>
 ```

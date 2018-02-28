@@ -4,7 +4,7 @@
 - 优点：优化初次加载页面时的性能
 - 缺点：Browserify在默认情况下不支持
 - 在非webpack打包脚手架环境下的使用方法
-`<html>
+` <html>
 <head>
   <title>Async Component test</title>
 </head>

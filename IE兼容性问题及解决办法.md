@@ -4,4 +4,4 @@
 ##### 支持的主要CSS3属性：
 - 1.border-radius圆角
    CSS代码如下：
-> .pie_radius{ width:250px;height:250px;background-color:#34538b;-moz-border-radius:10px;      -webkit-border-radius:10px;border-radius:10px;behavior:url(pie.htc);}
+> ```.pie_radius{ width:250px;height:250px;background-color:#34538b;-moz-border-radius:10px;      -webkit-border-radius:10px;border-radius:10px;behavior:url(pie.htc);}```

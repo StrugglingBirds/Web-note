@@ -2,7 +2,7 @@
 实际上是指的是一个名为pie的htc文件，即pie.htc，使用CSS的behavior行为，可以调用此文件，然后让IE也能实现一些常见的 CSS3效果，如圆角(border-radius)，盒阴影(box-shadow)，背景渐变(gradient)，多图片背景(multiple background images)。
 下载地址：https://github.com/lojjic/PIE/downloads
 ##### 支持的主要CSS3属性：
-- 1.border-radius圆角<br>
+###### 1.border-radius圆角<br>
 
 CSS代码如下：
  ```
@@ -20,7 +20,7 @@ html代码如下：
 ```
 <div class="pie_radius"></div>
 ```
-- 2.box-shadow 盒阴影<br>
+###### 2.box-shadow 盒阴影<br>
 
 CSS代码如下：
 ```
@@ -38,7 +38,7 @@ CSS代码如下：
  ```
  <div class="pie_box_shadow"></div>
  ```
- - 3.gradient渐变<br>
+ ###### 3.gradient渐变<br>
  
  CSS代码如下：
  ```
@@ -56,7 +56,7 @@ CSS代码如下：
  ```
  <div class="pie_gradient"></div>
  ```
- - 4.background多背景图<br>
+ ###### 4.background多背景图<br>
  
  CSS代码如下:
  ```
@@ -74,7 +74,7 @@ CSS代码如下：
  ```
 以上为PIE1.0.0的使用方法
 如若使用的PIE2.0.0,需引入对应版本的PIE.ie678.js或PIE.ie9.js
--  5.问题说明：
+###### 5.问题说明：
 > A. IE下这些CSS3效果实现是借助于VML，由VML绘制圆角或是投影效果的容器元素，然后这个容器元素作为目标元素的后兄弟节点插入，如果目标元素position:absolute 或是 position:relative，则这个css3-container元素将会设置与之一样的z-index值，在DOM tree中，同级的元素总是后面的覆盖前面的，所以这样就实现了覆盖，又避免了可能有其他元素正好插入其中。所 以，问题来了，如果目前元素的position属性为static，也就是默认属性，则z-index属性是没有用的，无覆盖可言，所以此时IE浏览器下 CSS3的渲染是不会成功的。要解决也很简单，设置目标元素position:relative或是设置祖先元素position:relative并赋 予一个z-index值（不可为-1）。
 
 > B. IE浏览器的behavior 属性是相对于HTML文档而言的，与CSS其他的属性不一样，不是相对于CSS文档而言的。这使得使用pie.htc文件不怎么方变。如果绝对路径于根目 录，则CSS文件不方便移动；如果相对路径与HTML文档，则pie.htc文件在不同HTML页面见的重用性大大降低。同时，诸如border- image后面的URL属性路径也不好处理。 

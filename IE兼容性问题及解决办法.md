@@ -3,6 +3,7 @@
 下载地址：https://github.com/lojjic/PIE/downloads
 ##### 支持的主要CSS3属性：
 - 1.border-radius圆角<br>
+
 CSS代码如下：
  ```
  .pie_radius{
@@ -20,6 +21,7 @@ html代码如下：
 <div class="pie_radius"></div>
 ```
 - 2.box-shadow 盒阴影<br>
+
 CSS代码如下：
 ```
 .pie_box_shadow{
@@ -37,6 +39,7 @@ CSS代码如下：
  <div class="pie_box_shadow"></div>
  ```
  - 3.gradient渐变<br>
+ 
  CSS代码如下：
  ```
  .pie_gradient{
@@ -54,6 +57,7 @@ CSS代码如下：
  <div class="pie_gradient"></div>
  ```
  - 4.background多背景图<br>
+ 
  CSS代码如下:
  ```
  .pie_background{

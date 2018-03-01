@@ -72,8 +72,10 @@ CSS代码如下：
  ```
  <div class="pie_background"></div>
  ```
+<div style="color:red">
 以上为PIE1.0.0的使用方法
 如若使用的PIE2.0.0,需引入对应版本的PIE.ie678.js或PIE.ie9.js
+</div>
 ###### 5.问题说明：
 > A. IE下这些CSS3效果实现是借助于VML，由VML绘制圆角或是投影效果的容器元素，然后这个容器元素作为目标元素的后兄弟节点插入，如果目标元素position:absolute 或是 position:relative，则这个css3-container元素将会设置与之一样的z-index值，在DOM tree中，同级的元素总是后面的覆盖前面的，所以这样就实现了覆盖，又避免了可能有其他元素正好插入其中。所 以，问题来了，如果目前元素的position属性为static，也就是默认属性，则z-index属性是没有用的，无覆盖可言，所以此时IE浏览器下 CSS3的渲染是不会成功的。要解决也很简单，设置目标元素position:relative或是设置祖先元素position:relative并赋 予一个z-index值（不可为-1）。
 

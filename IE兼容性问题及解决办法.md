@@ -2,7 +2,7 @@
 实际上是指的是一个名为pie的htc文件，即pie.htc，使用CSS的behavior行为，可以调用此文件，然后让IE也能实现一些常见的 CSS3效果，如圆角(border-radius)，盒阴影(box-shadow)，背景渐变(gradient)，多图片背景(multiple background images)。
 下载地址：https://github.com/lojjic/PIE/downloads
 ##### 支持的主要CSS3属性：
-- 1.border-radius圆角
+- 1.border-radius圆角<br>
 CSS代码如下：
  ```
  .pie_radius{
@@ -19,7 +19,7 @@ html代码如下：
 ```
 <div class="pie_radius"></div>
 ```
-- 2.box-shadow 盒阴影
+- 2.box-shadow 盒阴影<br>
 CSS代码如下：
 ```
 .pie_box_shadow{
@@ -36,7 +36,7 @@ CSS代码如下：
  ```
  <div class="pie_box_shadow"></div>
  ```
- - 3.gradient渐变
+ - 3.gradient渐变<br>
  CSS代码如下：
  ```
  .pie_gradient{
@@ -53,7 +53,7 @@ CSS代码如下：
  ```
  <div class="pie_gradient"></div>
  ```
- - 4.background多背景图
+ - 4.background多背景图<br>
  CSS代码如下:
  ```
  .pie_background{

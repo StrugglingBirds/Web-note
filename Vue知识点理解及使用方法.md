@@ -108,3 +108,27 @@
     }
 </script>
 ```
+#### 2.计算属性
+- 计算属性用于非频繁更新的需要逻辑处理之后获取结果的组件数据
+- 计算属性有getter和setter，默认方法为getter
+- get方法为获取计算属性的值时要执行的逻辑代码，数据结果需要return出来
+- set方法为更新计算属性的值时要执行的逻辑代码，方法无需return
+- 计算属性只有在setter执行，即更新计算属性的值发生变化时，才会更新数据，简单来说，set方法执行后会自动执行get方法
+
+(1)代码示例
+```
+computed: {
+  fullName: {
+    // getter
+    get: function () {
+      return this.firstName + ' ' + this.lastName
+    },
+    // setter
+    set: function (newValue) {
+      var names = newValue.split(' ')
+      this.firstName = names[0]
+      this.lastName = names[names.length - 1]
+    }
+  }
+}
+```

@@ -138,14 +138,16 @@ computed: {
 
 ###### 什么时候会使用Vuex呢？vue中组件之间互相传值有那么几种形式：
 - (1)父组件向子组件传递数据（父 ——> 子: 父(:attrName=value), 子(props:['attrName'])）【父组件主动传递，子组件被动接收】
+
 - (2)子组件向父组件传递数据（子 ——> 父: 子(this.$emit('eventName',value), 父(@eventName=methodName methodName(value){value为父组件接收到的数据})【通过子组件的事件触发，传递和接收数据】
+
 - (3)bus总线数据管理【通过公开数据的组件触发事件，传递和接收数据】
-     ```
+```
      /*bus.js*/
      const bus = new Vue()
      export default bus
-    ```
-    ```
+```
+```
     /*componentA组件将数据username公开*/
     <script>
       import Bus from './bus'
@@ -160,8 +162,8 @@ computed: {
         }
       }
     </script>
-    ```
-    ```
+```
+```
     /*componentB组件接收username*/
     <script>
       import Bus from './bus'
@@ -175,7 +177,7 @@ computed: {
         }
       }
     </script>
-    ```
+```
 - (4)当用以上三种方案使逻辑非常复杂并且难以维护时，此时你就应该考虑用一种思路更加清晰，管理和维护更容易的方法去专门做这件事情了，Vuex将成为你更好的选择
 ##### 安装方法(webpack中Vuex安装)
 (1)使用npm安装Vuex依赖

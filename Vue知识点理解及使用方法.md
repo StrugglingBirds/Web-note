@@ -132,3 +132,54 @@ computed: {
   }
 }
 ```
+##### Vuex的使用方法
+###### 安装方法(webpack中Vuex安装)
+(1)使用npm安装Vuex依赖
+```
+npm install vuex --save-dev
+```
+(2)在main.js中全局引入
+```
+  import App from './App'
+  import Vue from 'vue'   //引入Vue
+  import Vuex from 'vuex' //引入Vuex
+  import router from './router' //引入router
+  Vue.use(Vuex)
+  /*创建状态管理对象*/
+  const store = new Vuex.Store({
+    state: {
+      count: ''
+    },
+    mutations: {
+      add (state) {
+        state.count++
+      },
+      reduce (state) {
+        state.count--
+      }
+    }
+  })
+  /*创建Vue实例，将Vuex的store全局引入*/
+  const vm = new Vue({
+    el: '#app',
+    template: '<App/>',
+    components: { App }
+    store,
+    router
+  })
+```
+(3)在App组件中使用
+```
+<template>
+  <div id="app">
+    <button @click="$store.commit('add')">+</button>
+    <span>{{ $store.state.count }}</span>
+    <button @click="$store.commit('reduce')">-</button>
+  </div>
+</template>
+<script>
+  export default {
+    name: 'app'
+  }
+</script>
+```

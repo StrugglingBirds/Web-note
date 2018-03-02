@@ -133,7 +133,13 @@ computed: {
 }
 ```
 #### 3.Vuex的使用方法
-###### 安装方法(webpack中Vuex安装)
+##### Vuex的简单介绍
+> 对于Vuex的粗略理解为：针对Vue框架的项目的数据的状态管理架构。粗略理解的话也不太理解，那就理解为Vue项目中的需要在组件之间共享的数据的状态的管理的一个插件，也有人把它也理解为框架，对于哲理的东西，在这里不做讨论
+
+> 什么时候会使用Vuex呢？vue中组件之间互相传值有那么几种形式：
+  (1)父组件向子组件传递数据（父 ——> 子: 父(:attrName=val),子(props:['attrName'])）
+
+##### 安装方法(webpack中Vuex安装)
 (1)使用npm安装Vuex依赖
 ```
 npm install vuex --save-dev
@@ -185,3 +191,4 @@ npm install vuex --save-dev
   }
 </script>
 ```
+

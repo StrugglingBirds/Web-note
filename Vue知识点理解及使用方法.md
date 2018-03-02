@@ -132,7 +132,7 @@ computed: {
   }
 }
 ```
-##### Vuex的使用方法
+#### 3.Vuex的使用方法
 ###### 安装方法(webpack中Vuex安装)
 (1)使用npm安装Vuex依赖
 ```
@@ -145,6 +145,7 @@ npm install vuex --save-dev
   import Vuex from 'vuex' //引入Vuex
   import router from './router' //引入router
   Vue.use(Vuex)
+  
   /*创建状态管理对象*/
   const store = new Vuex.Store({
     state: {
@@ -159,6 +160,7 @@ npm install vuex --save-dev
       }
     }
   })
+  
   /*创建Vue实例，将Vuex的store全局引入*/
   const vm = new Vue({
     el: '#app',
